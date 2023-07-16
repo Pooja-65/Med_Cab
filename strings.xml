@@ -1,0 +1,24 @@
+<resources>
+  <string name="app_name">Med-Cab</string>
+  <string name="sign_up"><u>Sign Up</u></string>
+  <string name="choose_image"><u>Choose Image</u></string>
+    <string name="choose_location">Choose Location</string>
+  <string name="make_request">Make Request</string>
+  <string-array name="select">Select Blood Group
+    <item>Select Blood Group</item>
+    <item>A+</item>
+    <item>A-</item>
+    <item>B+</item>
+    <item>B-</item>
+    <item>AB+</item>
+    <item>AB-</item>
+    <item>O+</item>
+    <item>O-</item>
+  </string-array>
+  <string name="schedule_appointment">Schedule Appointment</string>
+  <string name="navigation_drawer_open">Open drawer</string>
+  <string name="navigation_drawer_close">Close drawer</string>
+  <string name="menu_item_sign_out">Sign Out</string>
+
+
+</resources>

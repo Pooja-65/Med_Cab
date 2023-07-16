@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.rockstar.medcab">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CALL_PHONE"/>
+  <uses-permission android:name="android.permission.SET_ALARM" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+
+  <application
+    android:allowBackup="true"
+    android:icon="@drawable/medcablogo"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    android:usesCleartextTraffic="true">
+    <activity android:name="com.rockstar.medcab.Activities.MainActivity"
+        android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity android:name="com.rockstar.medcab.Activities.InstructionsActivity" />
+
+    <activity android:name="com.rockstar.medcab.Activities.SearchResults" />
+    <activity android:name="com.rockstar.medcab.Activities.MakeRequestActivity" />
+    <activity android:name="com.rockstar.medcab.Activities.SearchActivity" />
+    <activity android:name="com.rockstar.medcab.Activities.LoginActivity" />
+    <activity android:name="com.rockstar.medcab.Activities.RegisterActivity" />
+    <activity android:name="com.rockstar.medcab.Activities.SplashScreen"
+        android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <receiver
+        android:name="com.rockstar.medcab.Utils.BloodBankReceiver"
+        android:enabled="true"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="com.rishabh.bloodbank.ACTION_SEND_NOTIFICATION" />
+        <action android:name="com.rishabh.bloodbank.ACTION_SEND_ALERT" />
+      </intent-filter>
+    </receiver>
+    <receiver
+        android:name="com.rockstar.medcab.Utils.BootReceiver"
+        android:enabled="true"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <receiver
+        android:name="com.rockstar.medcab.Utils.NotificationReceiver"
+        android:exported="false">
+      <intent-filter>
+        <action android:name="com.example.yourapp.SHOW_NOTIFICATION" />
+      </intent-filter>
+    </receiver>
+
+  </application>
+
+</manifest>

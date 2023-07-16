@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rockstar.medcab.Activities.RegisterActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Your Details will be public to the community, by using this app you also need to pledge to be a donor to help those who are in need."
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp">
+
+      <EditText
+          android:id="@+id/name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Name"
+          android:inputType="text"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp">
+
+      <EditText
+          android:id="@+id/city"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="City"
+          android:inputType="text"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="400dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp">
+
+      <EditText
+          android:id="@+id/number"
+          android:layout_width="388dp"
+          android:layout_height="wrap_content"
+          android:hint="Mobile Number(Verifiable)"
+          android:inputType="number"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="400dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp">
+
+
+      <Spinner
+          android:id="@+id/blood_group"
+          android:layout_width="390dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/spinner_background"
+          android:dropDownVerticalOffset="10dp"
+          android:minHeight="48dp"
+          android:popupBackground="@color/white"
+          android:spinnerMode="dropdown"
+          tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        app:passwordToggleEnabled="true">
+
+      <EditText
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Password"
+          android:inputType="textPassword"
+          android:textColor="@android:color/black"
+          android:textSize="20sp"
+          tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/become_donor_button"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_bg"
+          android:text="Become a donor"
+          android:textAllCaps="false"
+          android:textColor="@android:color/white"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/register_user_button"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="20dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_bg"
+          android:text="Register as user"
+          android:textAllCaps="false"
+          android:textColor="@android:color/white"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
